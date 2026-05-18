@@ -24,6 +24,8 @@ static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 int main(void)
 {
 	int ret;
+	
+	printk("Lesson 9 Exercise 1 started\n");
 
 	if (!device_is_ready(led.port)) {
 		return -1;

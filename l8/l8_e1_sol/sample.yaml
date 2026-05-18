@@ -33,4 +33,9 @@ common:
       - nrf54lm20dk/nrf54lm20a/cpuapp
     
 tests:
-  ncs_inter.l8.e1_sol: {}
+  ncs_inter.l8.e1_sol:
+    harness: console
+    harness_config:
+      type: one_line
+      regex:
+        - "Hello from DevAcademy Intermediate, Lesson 8, Exercise 1"

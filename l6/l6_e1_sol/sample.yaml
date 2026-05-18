@@ -37,4 +37,9 @@ common:
       - nrf7002dk/nrf5340/cpuapp/ns   
     
 tests:
-  ncs_inter.l6.e1_sol: {}
+  ncs_inter.l6.e1_sol:
+    harness: console
+    harness_config:
+      type: one_line
+      regex:
+        - "ADC reading"

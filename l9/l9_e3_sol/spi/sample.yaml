@@ -5,6 +5,11 @@ sample:
 common: 
     sysbuild: true
     build_only: true
+    harness: console
+    harness_config:
+      type: one_line
+      regex:
+        - "Lesson 9 Exercise 3 started"
     
 tests:
   ncs_inter.l9.e3.spi_sol.gd:

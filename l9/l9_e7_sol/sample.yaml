@@ -11,4 +11,9 @@ common:
       - nrf7002dk/nrf5340/cpuapp/ns    
     
 tests:
-  ncs_inter.l9.e7_sol: {}
+  ncs_inter.l9.e7_sol:
+    harness: console
+    harness_config:
+      type: one_line
+      regex:
+        - "The AWS IoT sample started, version:"

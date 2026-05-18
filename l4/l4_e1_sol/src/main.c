@@ -27,6 +27,7 @@ static const struct pwm_dt_spec pwm_led0 = PWM_DT_SPEC_GET(PWM_LED0);
 int main(void)
 {
     int err;
+    LOG_INF("Lesson 4 Exercise 1 started");
 
     /* STEP 3.3 - Check if the device is ready */
     if (!pwm_is_ready_dt(&pwm_led0)) {

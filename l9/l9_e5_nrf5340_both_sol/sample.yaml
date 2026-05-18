@@ -13,4 +13,9 @@ common:
       - nrf5340dk/nrf5340/cpuapp/ns    
     
 tests:
-  ncs_inter.l9.e5.nrf53_sol: {}
+  ncs_inter.l9.e5.nrf53_sol:
+    harness: console
+    harness_config:
+      type: one_line
+      regex:
+        - "Starting Bluetooth Peripheral LBS sample"

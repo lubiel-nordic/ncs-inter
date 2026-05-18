@@ -24,6 +24,8 @@ int main(void)
 {
 	int ret;
 
+	printk("Lesson 9 Exercise 2 started\n");
+
 	if (!device_is_ready(led.port)) {
 		return -1;
 	}

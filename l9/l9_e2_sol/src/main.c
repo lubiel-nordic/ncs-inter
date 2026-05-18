@@ -6,6 +6,7 @@
 
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/gpio.h>
+#include <zephyr/sys/printk.h>
 
 /* 1000 msec = 1 sec */
 
@@ -23,6 +24,8 @@ static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 int main(void)
 {
 	int ret;
+
+	printk("Lesson 9 Exercise 2 started\n");
 
 	if (!device_is_ready(led.port)) {
 		return -1;
